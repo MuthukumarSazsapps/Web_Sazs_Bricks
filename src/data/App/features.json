@@ -1,0 +1,38 @@
+[
+  {
+    "image": "/assets/img/icons/fe1.png",
+    "title": {
+      "text1": "CAMERA INTEGARATION",
+      "text2": "With Bill"
+    }
+  },
+  {
+    "image": "/assets/img/icons/fe2.png",
+    "title": {
+      "text1": "E-INVOICE INTEGERATION",
+      "text2": "Ready To File  "
+    }
+  },
+  {
+    "image": "/assets/img/icons/fe3.png",
+    "title": {
+      "text1": "VECHILE MANAGEMENT",
+      "text2": "Multiple Vechile Deatils "
+    },
+    "new": true
+  },
+  {
+    "image": "/assets/img/icons/fe4.png",
+    "title": {
+      "text1": "EMPLOYE ATTENDENCE",
+      "text2": "Finger print input"
+    }
+  },
+  {
+    "image": "/assets/img/icons/fe5.png",
+    "title": {
+      "text1": "SECEURE SERVER DATABASE",
+      "text2": "Special Access To Each User"
+    }
+  }
+]

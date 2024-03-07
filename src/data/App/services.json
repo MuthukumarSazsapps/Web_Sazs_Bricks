@@ -1,0 +1,37 @@
+[
+  {
+    "img": "/assets/img/icons/serv_icons/9.png",
+    "info": "SECURED DATABASE",
+    "text": "Secure a database by implementing strict access controls, encryption, and strong authentication"
+  },
+  {
+    "img": "/assets/img/icons/serv_icons/16.png",
+    "info": "REPORTS",
+    "text": " Reports provide valuable insights into customer behavior, Preferences, and Interactions with a business. Analyzing these reports helps optimize strategies, Improve customer experiences"
+  },
+  {
+    "img": "/assets/img/icons/serv_icons/4.png",
+    "info": "SUPER USER ACCESS",
+    "text": "Seperate access will be given to CEO and empolyees.Only CEO can view all data's and download Reports.In employee access edit option will be Restricted"
+  },
+  {
+    "img": "/assets/img/icons/serv_icons/35.png",
+    "info": "REPORT FILTERS",
+    "text": "Special filters are avalable in reports which is used to filters weekly,monthly,yearly statements in REPORTS "
+  },
+  {
+    "img": "/assets/img/icons/serv_icons/8.png",
+    "info": "ZOHO & TALLY INTEGERATION",
+    "text": "direct download file to zoho and tally integaration is avaiable"
+  },
+  {
+    "img": "/assets/img/icons/serv_icons/43.png",
+    "info": "CAMERA INTEGARATION",
+    "text": "Camera is Integarated with Software image Of the vechile can be taken and stored during IN and OUT "
+  },
+  {
+    "img": "/assets/img/icons/serv_icons/44.png",
+    "info": "BOOM BARRIER",
+    "text": "Boom barriers is integarated with software it will give access when the bill is done"
+  }
+]
