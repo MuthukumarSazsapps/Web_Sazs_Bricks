@@ -3,7 +3,8 @@ import Head from 'next/head';
 //= Layout
 import PreviewLayout from '@layouts/Preview';
 //= Components
-import Header from '@components/Preview/Header';
+// import Header from '@components/Preview/Header';
+import Header from '@components/Digital/Header';
 import Features from '@components/Preview/Features';
 import Demos from '@components/Preview/Demos';
 import InnerPages from '@components/Preview/InnerPages';
@@ -15,7 +16,7 @@ import Responsive from '@components/Preview/Responsive';
 import AllFeatures from '@components/Preview/AllFeatures';
 import Testimonials from '@components/Preview/Testimonials';
 import CallToAction from '@components/Preview/CallToAction';
-import HomeDigitalAgencyOnePage from './home-digital-agency-onePage';
+
 
 const LandingPreview = () => {
   useEffect(() => {
@@ -43,7 +44,8 @@ const LandingPreview = () => {
         <Testimonials />
         <CallToAction />
       </PreviewLayout> */}
-      <HomeDigitalAgencyOnePage/>
+      {/* <HomeDigitalAgencyOnePage/> */}
+      <Header />
     </>
   )
 }

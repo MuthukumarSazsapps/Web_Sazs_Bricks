@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import navbarScrollEffect from "@common/navbarScrollEffect";
 import scrollToSection from '@common/scrollToSection';
+import Link from 'next/link';
 
 const OnePageNav = () => {
    
@@ -21,31 +22,33 @@ const OnePageNav = () => {
     navbarScrollEffect(navbarRef.current);
   }, [navbarRef]);
 
-  useEffect(() => {
-    const sections = document.querySelectorAll('[data-scroll-index]');
+  // useEffect(() => {
+  //   const sections = document.querySelectorAll('[data-scroll-index]');
 
-    window.addEventListener('scroll', () => {
-      sections.forEach(section => {
-        const index = section.getAttribute('data-scroll-index');
-        const offset = section.offsetTop;
-        const height = section.offsetHeight;
-        const scroll = window.scrollY;
+  //   window.addEventListener('scroll', () => {
+  //     sections.forEach(section => {
+  //       const index = section.getAttribute('data-scroll-index');
+  //       const offset = section.offsetTop;
+  //       const height = section.offsetHeight;
+  //       const scroll = window.scrollY;
 
-        if (scroll + 200 > offset && scroll + 200 < offset + height) {
-          document.querySelector(`[data-scroll-nav="${index}"]`).classList.add('active');
-        } else {
-          document.querySelector(`[data-scroll-nav="${index}"]`).classList.remove('active');
-        }
-      });
-    });
-  }, []);
+  //       if (scroll + 200 > offset && scroll + 200 < offset + height) {
+  //         document.querySelector(`[data-scroll-nav="${index}"]`).classList.add('active');
+  //       } else {
+  //         document.querySelector(`[data-scroll-nav="${index}"]`).classList.remove('active');
+  //       }
+  //     });
+  //   });
+  // }, []);
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light style-1" ref={navbarRef}>
       <div className="container">
-        <a className="navbar-brand" href="#" onClick={scrollToSection} style={{marginTop:"-29px"}}>
+      <Link href={"/"}>
+        <a className="navbar-brand"   style={{marginTop:"-29px"}}>
           <img src="/assets/img/logo_cd.png" data-scroll-nav="0" alt="" width={180} height={60} />
         </a>
+        </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -53,20 +56,33 @@ const OnePageNav = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item dropdown">
-              <a className="nav-link" data-scroll-nav="1" onClick={scrollToSection}>
-                about us
+          <li className="nav-item dropdown">
+             <Link href={"/"}>
+              <a className="nav-link">
+                Home
               </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link" data-scroll-nav="2" onClick={scrollToSection}>
-                services
+             <Link href={"/AboutUs"}>
+              <a className="nav-link">
+                About us
               </a>
+              </Link>
+            </li>
+            <li className="nav-item dropdown">
+            <Link href={"/ServicesUs"}>
+              <a className="nav-link" >
+                Services
+              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-scroll-nav="3" onClick={scrollToSection}>
-                select us
+            <Link href={"/SelectUs"}>
+              <a className="nav-link" >
+                Select us
               </a>
+              </Link>
             </li>
             {/* <li className="nav-item">
               <a className="nav-link" data-scroll-nav="4" onClick={scrollToSection}>
@@ -74,16 +90,20 @@ const OnePageNav = () => {
               </a>
             </li> */}
             <li className="nav-item">
-              <a className="nav-link" data-scroll-nav="5" onClick={scrollToSection}>
+            <Link href={"/FeaturesUs"}>
+              <a className="nav-link" >
                 {/* testimonials */} Features
               </a>
+              </Link>
             </li>
             
 
             <li className="nav-item">
-              <a className="nav-link" data-scroll-nav="6" onClick={scrollToSection}>
+            <Link href={"/ContactUs"}>
+              <a className="nav-link" >
                 {/* blog */}Contact Us
               </a>
+              </Link>
             </li>
             {/* <li className="nav-item">
               <a className="nav-link" data-scroll-nav="6" onClick={scrollToSection}>

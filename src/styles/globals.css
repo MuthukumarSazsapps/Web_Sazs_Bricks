@@ -13,6 +13,20 @@ html, body {
 .lg-react-element {
   display: none;
 }
+.ifloat {
+  position: fixed;
+  width: 55px;
+  height: 57px;
+  bottom: 22px;
+  left: 25px;
+  /* background-color:#13f932; */
+  /* color:#FFF; */
+  border-radius: 50px;
+  text-align: center;
+  font-size: 38px;
+  /* box-shadow: 2px 2px 3px #999; */
+  z-index: 100;
+}
 
 .lg-container, .lg-container * {
   direction: ltr !important;
