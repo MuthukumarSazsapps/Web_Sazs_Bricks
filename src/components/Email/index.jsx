@@ -445,9 +445,7 @@ const Form = ({style = "4", rtl}) => {
     }
 
     setErrors(newErrors);
-    console.log('====================================');
-    console.log(newErrors);
-    console.log('====================================');
+
     if (Object.keys(newErrors).length === 0) {
 
       try {
@@ -459,13 +457,11 @@ const Form = ({style = "4", rtl}) => {
         };
 
         const isEmailSent = await axios.post(
-          "http://localhost:3000/api/api_email",
+          "https://web-sazs-bricks.vercel.app/api/api_email",
           body
         );
-          console.log(isEmailSent.data, "success");
 
         if (isEmailSent.data === "Success") {
-          console.log(isEmailSent.data , "success");
              setFormData({
                name: "",
                email: "",
